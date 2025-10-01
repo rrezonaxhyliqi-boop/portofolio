@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zebra Online Shopping</title>
+  <style>
+    body {
+      background: black;
+      font-family: 'Lexend Exa', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: white;
+    }
+
+    nav {
+      position: absolute;
+      top: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: inline-block;
+      border: 2px solid white;
+      border-radius: 50px;
+      animation: slide-in 1s ease-out;
+    }
+
+    ul {
+      position: relative;
+      display: flex;
+      flex: 1 1 auto;
+      margin: 0;
+      padding: 0 30px;
+      list-style-type: none;
+    }
+
+    li:not(:last-child) {
+      margin-right: 40px;
+    }
+
+    li {
+      border: 2px solid transparent;
+      border-radius: 5px;
+      padding: 10px;
+      transition: background 0.2s;
+    }
+
+    li a {
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    li:hover {
+      background: black;
+      border: 2px solid white;
+    }
+
+    li a:hover {
+      color: white;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: flex-start;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 120px;
+    }
+
+    .image-container img {
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+      max-width: 100%;
+      height: auto;
+      transition: transform 0.3s;
+    }
+
+    .model-image {
+      width: auto;
+      max-height: 350px;
+      transition: transform 0.3s;
+    }
+
+    .model-image:hover {
+      transform: scale(1.05);
+    }
+
+    /* Butoni: Rreth nesh */
+    .btn {
+      font-size: 1.0rem;
+      padding: 1rem 2.5rem;
+      border: none;
+      outline: none;
+      border-radius: 0.4rem;
+      cursor: pointer;
+      position: absolute;
+      right: 50px;
+      top: 562px;
+      text-transform: uppercase;
+      background-color: #0e0e1a;
+      color: #eaeaea; 
+      font-weight: 700;
+      transition: 0.6s;
+      box-shadow: 0px 0px 60px #1f4c65; 
+      -webkit-box-reflect: below 10px linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4));
+    }
+
+    .btn:active {
+      scale: 0.92;
+    }
+
+    .btn:hover {
+      background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+      color: #040426; /* very dark navy */
+    }
+
+    /* Butoni i ri: Raporto */
+    .report-btn {
+      font-size: 1.0rem;
+      padding: 1rem 2.5rem;
+      border: none;
+      outline: none;
+      border-radius: 0.4rem;
+      cursor: pointer;
+      position: absolute;
+      right: 275px;
+      top: 562px; 
+      text-transform: uppercase;
+      background-color: #0e0e1a;
+      color: #eaeaea; 
+      font-weight: 700;
+      transition: 0.6s;
+      box-shadow: 0px 0px 60px #1f4c65;
+      -webkit-box-reflect: below 10px linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4));
+    }
+
+    .report-btn:active {
+      scale: 0.92;
+    }
+
+    .report-btn:hover {
+      background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+      color: #040426; 
+    }
+
+    @keyframes slide-in {
+      0% {
+        top: -50px;
+      }
+      40% {
+        top: 20px;
+      }
+      70% {
+        top: 10px;
+      }
+      100% {
+        top: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="Koleksioni.html">MESHKUJ</a></li>
+      <li><a href="koleksioni.2.html">FEMRA</a></li>
+      <li><a href="koleksioni.3.html">FEMIJE</a></li>
+      <li><a href="koleksioni.4.html">AKSESORE</a></li>
+    </ul>
+  </nav>
+
+  <a href="Rrethnesh.html">
+    <button class="btn">Rrethë nesh</button>
+  </a>
+
+  <a href="Raporto.html">
+    <button class="report-btn">Raporto</button>
+  </a>
+
+  <div class="image-container">
+    <img src="zebrablack.jpg" alt="Zebra" class="zebra-image" width="530" height="400">
+    <img src="Model2.jpg" alt="Model2" class="model-image" width="340">
+    <img src="Model1.jpg" alt="Model1" class="model-image" width="370">
+  </div>
+
+</body>
+</html>
